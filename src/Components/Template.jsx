@@ -1,4 +1,7 @@
 import React from 'react'
+import SignUpForm from './SignUpForm';
+import LogInForm from './LogInForm';
+
 
 import frameImage from "../assets/frame.png";
 const Template = ({title,desc1,desc2,image,formtype,setIsLoggedIn})=>{

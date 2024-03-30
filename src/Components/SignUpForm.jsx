@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
-const SignUpForm = () => {
+const SignUpForm = (setIsLoggedIn) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",

@@ -1,11 +1,11 @@
 import './App.css'
 import {Route ,Routes} from "react-router-dom";
 import { useState } from 'react';
-import Navbar from "./Components/Navbar";
-import Home from "./Pages/Home";
-import Login from "./Pages/Login";
-import Signup from "./Pages/Signup";
-import Dashboard from "./Pages/Dashboard";
+import Navbar from "./Components/Navbar.jsx";
+import Home from "./Pages/Home.jsx";
+import Login from "./Pages/Login.jsx";
+import Signup from "./Pages/Signup.jsx";
+import Dashboard from "./Pages/Dashboard.jsx";
 
 function App() {
   const [isLoggedIn,setIsLoggedIn] = useState(false);
