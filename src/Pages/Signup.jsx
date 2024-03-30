@@ -1,5 +1,5 @@
 import React from 'react';
-import signupimg from "../assets/signup.png"
+import signupImg from "../assets/signup.png"
 import Template from '../Components/Template';
 
 const Signup = ({setIsLoggedIn}) => {
@@ -8,8 +8,8 @@ const Signup = ({setIsLoggedIn}) => {
     title ="Join the millions learning to code with StudyNotion for free" 
     desc1  = "Build skills for today, tomorrow and beyond."
     desc2 = "Education to future-proof your career."
-    image = {signupimg}
-    formType = "signup"
+    image = {signupImg}
+    formtype = "signup"
     setIsLoggedIn = {setIsLoggedIn}
       
     

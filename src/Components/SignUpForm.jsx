@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import {toast} from "react-hot-toast";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
-const SignUpForm = (setIsLoggedIn) => {
+
+const SignUpForm = ({setIsLoggedIn}) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -14,8 +16,26 @@ const SignUpForm = (setIsLoggedIn) => {
   function changeHandler(event) {
     setFormData((prevData) => ({
       ...prevData,
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value
     }));
+  }
+  function submitHandler(event){
+    event.preventDefault();
+  }
+
+    if(formData.password!=formData.confirmPassword){
+        toast.error("Passwords do not match");
+        return;
+    }
+
+    setIsLoggedIn(true);
+    toast.success("Account Created");
+    const accountData = {
+        ...formData
+    }
+    console.log("printing account data");
+    console.log(accountData);
+    navigate("/dashboard");
   }
   return (
     <div>
@@ -24,7 +44,7 @@ const SignUpForm = (setIsLoggedIn) => {
         <button>Student</button>
         <button>Instructor</button>
       </div>
-      <form>
+      <form onSubmit = {submitHandler}>
         {/* first name and lastname */}
         <div>
           <label>
@@ -35,7 +55,7 @@ const SignUpForm = (setIsLoggedIn) => {
             <input
               required
               type="text"
-              name="firstname"
+              name="firstName"
               onChange={changeHandler}
               placeholder="Enter First Name"
               value={formData.firstName}
@@ -48,7 +68,7 @@ const SignUpForm = (setIsLoggedIn) => {
             <input
               required
               type="text"
-              name="lastname"
+              name="lastName"
               onChange={changeHandler}
               placeholder="Enter last name"
               value={formData.lastName}
@@ -93,7 +113,7 @@ const SignUpForm = (setIsLoggedIn) => {
             <input
               required
               type={showPassword ? "text" : "password"}
-              name="Confirmpassword"
+              name="confirmPassword"
               onChange={changeHandler}
               placeholder="Confirmpassword"
               value={formData.confirmPassword}

@@ -5,6 +5,7 @@ import LogInForm from './LogInForm';
 
 import frameImage from "../assets/frame.png";
 const Template = ({title,desc1,desc2,image,formtype,setIsLoggedIn})=>{
+    console.log(formtype);
 
   
   return (
@@ -17,7 +18,7 @@ const Template = ({title,desc1,desc2,image,formtype,setIsLoggedIn})=>{
 
 
         </p>
-        {formtype ==="signup"?(<SignUpForm/>):(<LogInForm/>)
+        {formtype ==="signup"?(<SignUpForm setIsLoggedIn= {setIsLoggedIn}/>):(<LogInForm setIsLoggedIn = {setIsLoggedIn}/>)
 }
 <div>
     <div>
