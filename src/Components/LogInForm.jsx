@@ -29,14 +29,14 @@ const LogInForm = (setIsLoggedIn) => {
     }
   return (
 
-    <form onSubmit={submitHandler}>
-        <label>
-            <p>Email Address<sup>*</sup></p>
-            <input type = "email" required value = {formData.email} onChange = {changeHandler} placeholder='Enter email id' name = "email"></input>
+    <form onSubmit={submitHandler} className='flex flex-col w-full gap-y-4 mt-6'>
+        <label className = 'w-full'>
+            <p className='text-[0.875rem] text-white mb-1 leading-[1.375rem] '>Email Address<sup className='text-pink-400'>*</sup></p>
+            <input type = "email" required value = {formData.email} onChange = {changeHandler} className = 'bg-black rounded-[0.5rem] text-white w-full p-[12px]' placeholder='Enter email id' name = "email"></input>
 
         </label>
-        <label>
-            <p>
+        <label className = "w-full">
+            <p className='text-[0.875rem] text-white mb-1 leading-[1.375rem] '>
                 Password<sup>*</sup>
 
             </p>
@@ -44,7 +44,7 @@ const LogInForm = (setIsLoggedIn) => {
             required 
             type = {showPassword ? ("text") : ("password")}
              value = {formData.password} onChange = {changeHandler} 
-             placeholder = "Enter Password" name = "password"
+             placeholder = "Enter Password" name = "password" className = 'bg-black rounded-[0.5rem] text-white w-full p-[12px]'
               />
         
 
