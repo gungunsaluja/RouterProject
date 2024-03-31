@@ -11,13 +11,7 @@ const Signup = ({setIsLoggedIn}) => {
     image = {signupImg}
     formtype = "signup"
     setIsLoggedIn = {setIsLoggedIn}
-      
-    
-    
     />
-    
-      
-    
   )
 }
 
