@@ -51,8 +51,8 @@ const LogInForm = ({setIsLoggedIn}) => {
               />
         
 
-        <span className = 'absolute right-3 top-[38px] cursor-pointer' onclick = {()=>setShowPassword((prev)=>!prev)}>
-            {showPassword?(<AiOutlineEyeInvisible fontSize = {24} fill = '#AFB2BF'/>):(<AiOutlineEye fontSize = {24} fill = '#AFBF2BF'/>)}
+        <span className = 'absolute right-3 top-[38px] cursor-pointer' onClick = {()=>setShowPassword((prev)=>!prev)}>
+            {showPassword ? (<AiOutlineEyeInvisible fontSize = {24} fill = '#AFB2BF'/>):(<AiOutlineEye fontSize = {24} fill = '#AFBF2BF'/>)}
         </span>
         <Link to = "#">
             <p className = 'text-xs mt-1 text-blue-400 w-full max-w-max ml-auto '>Forgot password</p>

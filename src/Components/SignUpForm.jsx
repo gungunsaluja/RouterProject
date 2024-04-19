@@ -114,10 +114,10 @@ const SignUpForm = ({ setIsLoggedIn }) => {
               value={formData.password}
               className='bg-black rounded-[0.5rem] text-white w-full px-[12px] py-[8px] mt-6'
             />
-            <span onclick={() => setShowPassword((prev) => !prev)}
+            <span onClick={() => setShowPassword((prev) => !prev)}
             >
               {
-                showPassword ? (<AiOutlineEyeInvisible fontsize={24} fill='#AFB2BF' />) : (<AiOutlineEye fontsize={24} fill='#AFB2BF' />)
+                showPassword ? (<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF' />) : (<AiOutlineEye fontSize={24} fill='#AFB2BF' />)
               }
             </span>
           </label>
@@ -128,22 +128,22 @@ const SignUpForm = ({ setIsLoggedIn }) => {
             </p>
             <input
               required
-              type={showPassword ? "text" : "password"}
+              type={showPassword ? ("text") : ("password")}
               name="confirmPassword"
               onChange={changeHandler}
               placeholder="Confirm Password"
               value={formData.confirmPassword}
               className='bg-black rounded-[0.5rem] text-white w-full px-[12px] py-[8px] mt-6'
             />
-            <span className="absolute right-3 top-[38px] cursor-pointer" onclick={() => setShowPassword((prev) => !prev)}>
+            <span className="absolute right-3 top-[38px] cursor-pointer" onClick={() => setShowPassword((prev) => !prev)}>
               {
-                showPassword ? (<AiOutlineEyeInvisible fontsize={24} fill='#AFB2BF' />) : (<AiOutlineEye fontsize={24} fill='#AFB2BF' />)
+                showPassword ? (<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF' />) : (<AiOutlineEye fontSize={24} fill='#AFB2BF' />)
               }
             </span>
           </label>
         </div>
         <button className="w-full bg-yellow-50 rounded-[8px] font-medium text-black px-[12px] py-[8px] mt-6">
-          Create button
+          Create Account
         </button>
       </form>
     </div>
