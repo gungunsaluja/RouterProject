@@ -6,6 +6,7 @@ import {Toaster} from 'react-hot-toast';
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  // browserroute sare routes ko browser se connect karta hai
   <BrowserRouter>
     <App />
   <Toaster/>
