@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {toast} from 'react-hot-toast';
-import {AiOutlineEye,AiOutlineEyeInvisible} from 'react-icons/ai';
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import {Link,useNavigate} from 'react-router-dom';
 
 const LogInForm = ({setIsLoggedIn}) => {
@@ -34,7 +34,7 @@ const LogInForm = ({setIsLoggedIn}) => {
 
     <form onSubmit={submitHandler} className='flex flex-col w-full gap-y-4 mt-6'>
         <label className = 'w-full'>
-            <p className='text-[0.875rem] text-white mb-1 leading-[1.375rem] '>Email Address<sup className='text-pink-400'>*</sup></p>
+            <p className='text-[0.875rem] text-white mb-1 leading-[1.375rem]'>Email Address<sup className='text-pink-400'>*</sup></p>
             <input type = "email" required value = {formData.email} onChange = {changeHandler} className = 'bg-black rounded-[0.5rem] text-white w-full p-[12px]' placeholder='Enter email address' name = "email"></input>
 
         </label>
