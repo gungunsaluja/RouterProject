@@ -30,7 +30,7 @@ const Navbar = (props) => {
       <div className="flex items-center gap-x-4 ">
         {!isLoggedIn && (
           <Link to="/login">
-            <button className="bg-black text-white py-[8px] px-[12px] rounded-[8px] border border-black">
+            <button className="bg-white text-black py-[8px] px-[12px] rounded-[8px] border border-black">
               Login
             </button>
           </Link>
@@ -38,7 +38,7 @@ const Navbar = (props) => {
 
         {!isLoggedIn && (
           <Link to="/signup">
-            <button className="bg-black text-white py-[8px] px-[12px] rounded-[8px] border border-black">
+            <button className="bg-white text-black py-[8px] px-[12px] rounded-[8px] border border-black">
               Sign Up
             </button>
           </Link>
@@ -47,7 +47,7 @@ const Navbar = (props) => {
         {isLoggedIn && (
           <Link to="/">
             <button
-              className="bg-black text-white py-[8px] px-[12px] rounded-[8px] border border-black"
+              className="bg-white text-black py-[8px] px-[12px] rounded-[8px] border border-white"
               onClick={() => {
                 setIsLoggedIn(false);
                 toast.success("Logged Out");
@@ -59,7 +59,7 @@ const Navbar = (props) => {
         )}
         {isLoggedIn && (
           <Link to="/dashboard">
-            <button className="bg-black text-white py-[8px] px-[12px] rounded-[8px] border border-black">
+            <button className="bg-white text-black py-[8px] px-[12px] rounded-[8px] border border-white">
               Dashboard
             </button>
           </Link>
