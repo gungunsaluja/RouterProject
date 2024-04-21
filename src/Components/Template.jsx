@@ -5,7 +5,7 @@ import LogInForm from "./LogInForm";
 import { FcGoogle } from "react-icons/fc";
 
 import frameImage from "../assets/frame.png";
-const Template = ({ title, desc1, desc2, image, formtype, setIsLoggedIn }) => {
+const Template = ({title, desc1, desc2, image, formtype, setIsLoggedIn }) => {
   // console.log("Ye rha mera form type")
   //   console.log(formtype);
 

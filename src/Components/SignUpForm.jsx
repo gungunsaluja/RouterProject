@@ -33,6 +33,7 @@ const SignUpForm = ({ setIsLoggedIn }) => {
     const accountData = {
       ...formData
     };
+    
     const finalData = {
       ...accountData,
       accountType
