@@ -101,7 +101,7 @@ const SignUpForm = ({ setIsLoggedIn }) => {
           />
         </label>
         {/* create password confirm password */}
-        <div className="w-full flex gap-x-4 mt-4">
+        <div className="w-full flex gap-x-4 mt-[20px]">
           <label className="w-full relative">
             <p className='text-[0.875rem] text-white mb-1 leading-[1.375rem] '>
               Create Password<sup className='text-pink-400'>*</sup>
@@ -115,7 +115,8 @@ const SignUpForm = ({ setIsLoggedIn }) => {
               value={formData.password}
               className='bg-black rounded-[0.5rem] text-white w-full px-[12px] py-[8px] mt-6'
             />
-            <span onClick={() => setShowPassword((prev) => !prev)}
+            <span className = 'absolute right-3 top-[38px] cursor-pointer'
+            onClick={() => setShowPassword((prev) => !prev)}
             >
               {
                 showPassword ? (<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF' />) : (<AiOutlineEye fontSize={24} fill='#AFB2BF' />)
@@ -133,13 +134,14 @@ const SignUpForm = ({ setIsLoggedIn }) => {
               name="confirmPassword"
               onChange={changeHandler}
               placeholder="Confirm Password"
-              value={formData.confirmPassword}
+              value = {formData.confirmPassword}
               className='bg-black rounded-[0.5rem] text-white w-full px-[12px] py-[8px] mt-6'
             />
             <span className="absolute right-3 top-[38px] cursor-pointer" onClick={() => setShowPassword((prev) => !prev)}>
               {
                 showPassword ? (<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF' />) : (<AiOutlineEye fontSize={24} fill='#AFB2BF' />)
               }
+      
             </span>
           </label>
         </div>

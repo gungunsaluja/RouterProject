@@ -10,7 +10,7 @@ const Template = ({title, desc1, desc2, image, formtype, setIsLoggedIn }) => {
   //   console.log(formtype);
 
   return (
-    <div className="flex justify-between w-11/12 max-w-[1160px] py-12 mx-auto gap-x-20 gap-y-0">
+    <div className="flex justify-between w-11/12 max-w-[1160px] py-12 mx-auto gap-x-12 gap-y-0">
       <div className="w-11/12 max-w-[450px]">
         <h1 className="text-white font-semibold text-[1.875rem] leading-[2.375rem]">
           {title}
@@ -30,6 +30,7 @@ const Template = ({title, desc1, desc2, image, formtype, setIsLoggedIn }) => {
           <p className="text-black font-medium leading[1.375rem]">OR</p>
           <div className="w-full h-[1px] bg-black"></div>
         </div>
+        
 
         <button className="w-full flex justify-center items-center rounded-[8px] font-medium text-white px-[12px] gap-x-2 mt-6 border border-black">
           <FcGoogle />
