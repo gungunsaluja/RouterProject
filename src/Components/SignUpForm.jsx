@@ -36,16 +36,16 @@ const SignUpForm = ({ setIsLoggedIn }) => {
 
     setIsLoggedIn(true);
     toast.success("Account Created");
-    const accountData = {
-      ...formData
-    };
+    // const accountData = {
+    //   ...formData
+    // };
     
-    const finalData = {
-      ...accountData,
-      accountType
-    }
-    console.log("printing account data");
-    console.log(accountData);
+    // const finalData = {
+    //   ...accountData,
+    //   accountType
+    // }
+    // console.log("printing account data");
+    // console.log(accountData);
     navigate("/dashboard");
   }
   return (
@@ -55,7 +55,7 @@ const SignUpForm = ({ setIsLoggedIn }) => {
         <button className={`${accountType === "student" ? "bg-black text-white" : "bg-transparent text-gray-300"} py-2 px-5 rounded-full transition-all duration-200`}
           onClick={() => setAccount("student")}>Student</button>
         <button
-          className={`${accountType === "student" ? "bg-black text-white" : "bg-transparent text-gray-300"} py-2 px-5 rounded-full transition-all duration-200`} onClick={() => setAccount("instructor")}>Instructor</button>
+          className={`${accountType === "instructor" ? "bg-black text-white" : "bg-transparent text-gray-300"} py-2 px-5 rounded-full transition-all duration-200`} onClick={() => setAccount("instructor")}>Instructor</button>
 
       </div>
       <form onSubmit={submitHandler}>
