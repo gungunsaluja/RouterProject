@@ -18,6 +18,7 @@ const LogInForm = ({setIsLoggedIn}) => {
             {
                 ...prevData,
                 [event.target.name]:event.target.value
+                // mtlb ki email ki value email me jayegi and password ki value password me jayegii
             }
         ) )
     }
