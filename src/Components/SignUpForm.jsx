@@ -16,6 +16,8 @@ const SignUpForm = ({ setIsLoggedIn }) => {
   const navigate = useNavigate();
 
   const [showPassword, setShowPassword] = useState(false);
+  // const [showConfirmPassword,setShowConfirmPassword] = useState(false);
+
   
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [accountType, setAccount] = useState("student");
@@ -141,9 +143,9 @@ const SignUpForm = ({ setIsLoggedIn }) => {
               value = {formData.confirmPassword}
               className='bg-black rounded-[0.5rem] text-white w-full px-[12px] py-[8px] mt-6'
             />
-            <span className="absolute right-3 top-[38px] cursor-pointer" onClick={() => setShowPassword((prev) => !prev)}>
+            <span className="absolute right-3 top-[38px] cursor-pointer" onClick={() => setShowConfirmPassword((prev) => !prev)}>
               {
-                showPassword ? (<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF' />) : (<AiOutlineEye fontSize={24} fill='#AFB2BF' />)
+                showConfirmPassword ? (<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF' />) : (<AiOutlineEye fontSize={24} fill='#AFB2BF' />)
               }
       
             </span>
