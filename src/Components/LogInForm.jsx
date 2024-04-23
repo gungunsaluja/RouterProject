@@ -58,7 +58,7 @@ const LogInForm = ({setIsLoggedIn}) => {
             <p className = 'text-xs mt-1 text-blue-400 w-full max-w-max ml-auto '>Forgot password</p>
         </Link>
         </label>
-        <button className = 'bg-yellow-50 rounded-[8px] font-medium text-black px-[12px] py-[8px]'>Sign In</button>
+        <button className = 'bg-yellow-50 rounded-[8px] font-medium text-black px-[12px] py-[8px]'>LogIn</button>
     </form>
   )
 }
